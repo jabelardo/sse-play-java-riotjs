@@ -1,0 +1,5 @@
+GET     /                           controllers.ChatController.indexRiot
+GET     /chatFeed/:room             controllers.ChatController.chatFeed(room: String)
+POST    /chat                       controllers.ChatController.postMessage
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
